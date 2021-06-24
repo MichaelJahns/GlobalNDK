@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelDigitOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="128dp"
+        android:text="@string/first_digit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/labelDigitTwo"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/labelDigitTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="@string/second_digit"
+        app:layout_constraintBottom_toBottomOf="@+id/labelDigitOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/labelDigitOne"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="@string/_20"
+        app:layout_constraintEnd_toEndOf="@+id/labelDigitOne"
+        app:layout_constraintStart_toStartOf="@+id/labelDigitOne"
+        app:layout_constraintTop_toBottomOf="@+id/labelDigitOne" />
+
+    <EditText
+        android:id="@+id/etNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        android:text="@string/_5"
+        android:gravity="center"
+        android:hint="I cannot be zero"
+        app:layout_constraintEnd_toEndOf="@+id/labelDigitTwo"
+        app:layout_constraintStart_toStartOf="@+id/labelDigitTwo"
+        app:layout_constraintTop_toBottomOf="@+id/labelDigitTwo" />
+
+    <TextView
+        android:id="@+id/tvAdditionOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/addition"
+        app:layout_constraintEnd_toStartOf="@+id/etNumber2"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@+id/etNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/etNumber1" />
+
+    <TextView
+        android:id="@+id/tvSubtractionOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/subtraction"
+        app:layout_constraintEnd_toEndOf="@+id/tvAdditionOperation"
+        app:layout_constraintStart_toStartOf="@+id/tvAdditionOperation"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdditionOperation" />
+
+    <TextView
+        android:id="@+id/tvMultiplicationOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/multiplication"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubtractionOperation"
+        app:layout_constraintStart_toStartOf="@+id/tvSubtractionOperation"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtractionOperation" />
+
+    <TextView
+        android:id="@+id/tvDivisionOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/division"
+        app:layout_constraintEnd_toEndOf="@+id/tvMultiplicationOperation"
+        app:layout_constraintStart_toStartOf="@+id/tvMultiplicationOperation"
+        app:layout_constraintTop_toBottomOf="@+id/tvMultiplicationOperation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

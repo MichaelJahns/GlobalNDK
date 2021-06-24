@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Global</string>
+    <string name="first_digit">First Digit</string>
+    <string name="second_digit">Second Digit</string>
+    <string name="_5">5</string>
+    <string name="_20">20</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+</resources>
